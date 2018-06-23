@@ -1,0 +1,8 @@
+
+[compiler]
+source=src/main/java
+source=src/main/resources
+source=src/test/java
+
+[defaults]
+encoding=UTF-8

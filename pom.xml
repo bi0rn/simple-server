@@ -28,7 +28,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>rest-service</finalName>
+		<finalName>ROOT</finalName>
 	</build>
 
 	<properties>

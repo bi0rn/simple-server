@@ -17,7 +17,7 @@ public class HelloResourceTest extends JerseyTest {
 
 	@Test
 	public void test() {
-		String hello = target("hello").request().accept("text/plain").get(String.class);
+		String hello = target("/").request().accept("text/plain").get(String.class);
 		assertEquals("Hello world!", hello);
 	}
 

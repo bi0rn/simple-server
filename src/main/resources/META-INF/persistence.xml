@@ -10,8 +10,8 @@
 			<property name="javax.persistence.jdbc.url" value="postgresql://postgresql:5432/sampledb" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL94Dialect" />
 			<property name="hibernate.hbm2ddl.auto" value="create" />
-			<property name="javax.persistence.jdbc.user" value="user" />
-			<property name="javax.persistence.jdbc.password" value="password" />
+			<property name="javax.persistence.jdbc.user" value="user8P5" />
+			<property name="javax.persistence.jdbc.password" value="pgydrBGINCUvdIKn" />
 			<property name="hibernate.show_sql" value="true" />
 		</properties>
 	</persistence-unit>

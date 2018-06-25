@@ -8,6 +8,7 @@ WORKDIR /tmp
 # copy application source code into container
 COPY . .
 
-RUN mvn clean verify
+#RUN mvn clean verify
 
-RUN cp target/*.war /opt/jboss/wildfly/standalone/deployments/
+#RUN cp target/*.war /opt/jboss/wildfly/standalone/deployments/
+ADD target/*.war /opt/jboss/wildfly/standalone/deployments/

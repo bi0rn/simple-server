@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import javax.ws.rs.GET;
@@ -14,9 +16,11 @@ import javax.ws.rs.Produces;
 @Path("elefants")
 @Transactional
 public class ElefantResource {
+	
+	private EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("elefants");
 
-	@PersistenceContext(name = "elefants")
-	private EntityManager entityManager;
+//	@PersistenceContext(name = "elefants")
+	private EntityManager entityManager = entityManagerFactory.createEntityManager();
 
 	@GET
 	@Produces("text/plain")

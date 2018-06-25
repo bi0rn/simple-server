@@ -7,7 +7,7 @@
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
-			<property name="javax.persistence.jdbc.url" value="postgresql://172.17.0.1:5432/sampledb" />
+			<property name="javax.persistence.jdbc.url" value="postgresql://postgresql:5432/sampledb" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL94Dialect" />
 			<property name="hibernate.hbm2ddl.auto" value="create" />
 			<property name="javax.persistence.jdbc.user" value="userDEM" />
